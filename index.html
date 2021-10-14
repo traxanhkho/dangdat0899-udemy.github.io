@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course-udemy</title>
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/font/fontawesome/css/all.css">
+</head>
+<body>
+	<!-- Header -->
+	<header id="header">
+		<div class="header__left">
+			<div class="header__logo">
+				<svg class="header__logo--vector" viewBox="0 0 91 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.05 8.112L7.024 4.056 0 8.112V4.056L7.025 0l7.026 4.056v4.056h-.001z" fill="#A435F0"/><path d="M0 11.518h3.68v8.941c0 2.31 1.725 3.436 3.345 3.436 1.634 0 3.346-1.156 3.346-3.467v-8.91h3.68v9.154c0 2.128-.669 3.77-2.007 4.896-1.339 1.125-3.011 1.673-5.05 1.673-2.037 0-3.71-.547-5.017-1.673C.669 24.443 0 22.862 0 20.763v-9.245zM45.866 22.63c-1.114.992-2.383 1.478-3.83 1.478-2.64 0-4.41-1.504-4.61-3.833h11.89s.08-.752.08-1.458c0-2.19-.7-4.015-2.13-5.505-1.398-1.49-3.222-2.22-5.443-2.22-2.341 0-4.258.73-5.779 2.22-1.49 1.49-2.25 3.436-2.25 5.87v.12c0 2.403.76 4.319 2.25 5.749 1.49 1.429 3.467 2.159 5.87 2.159 2.794 0 5.017-1.102 6.685-3.002l-2.733-1.578zm-6.994-7.463c.82-.639 1.825-.973 2.95-.973 1.064 0 1.946.334 2.707 1.004.726.61 1.118 1.359 1.152 2.22H37.52c.118-.89.568-1.64 1.353-2.25zM82.91 29.276C81.417 32.801 79.855 34 77.46 34H75.8v-3.262h1.342c.824 0 1.59-.31 2.32-1.994l.73-1.686-6.296-15.54h3.741l4.471 11.192 4.593-11.192h3.74l-7.53 17.758zM28.377 5.649v7.257c-1.206-1.08-3.082-1.723-4.896-1.723-2.16 0-3.984.76-5.474 2.31-1.46 1.521-2.19 3.406-2.19 5.687 0 2.282.73 4.167 2.19 5.718 1.49 1.521 3.315 2.282 5.474 2.282 2.49 0 4.064-.979 4.896-1.746v1.411h3.65V5.65h-3.65zm-1.095 16.878c-.882.882-2.007 1.339-3.315 1.339-1.308 0-2.372-.457-3.254-1.339-.85-.882-1.277-2.007-1.277-3.345 0-1.339.426-2.464 1.277-3.346.882-.882 1.946-1.338 3.254-1.338s2.433.456 3.315 1.338c.912.882 1.37 2.007 1.37 3.346 0 1.338-.458 2.463-1.37 3.345zM68.222 11.214c-2.772 0-4.213 1.15-5.2 2.258-.395-.753-1.507-2.258-4.105-2.258-2.196 0-3.49 1.11-4.136 1.9V11.52h-3.618v15.327h3.618v-8.82c0-2.068 1.278-3.558 2.98-3.558 1.735 0 2.738 1.308 2.738 3.406v8.971h3.619v-8.82c0-2.098 1.246-3.558 3.04-3.558 1.734 0 2.737 1.308 2.737 3.405v8.972h3.65v-9.488c0-3.996-2.148-6.142-5.323-6.142z" fill="#000"/></svg>
+			</div>
+			<div class="header__categories">
+				<a href="#" class="header__link">Categories</a>
+				<div class="header__categories--menu menu">
+					<div class="header__menu--mainMenu">
+						<ul class="header__menu-list"></ul>
+					</div>
+					<div class="header__menu--subMenu menu">
+						<ul class="header__menu-list"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__input">
+			<div class="header__input--search">
+				<span class="header__icon" ><i class="fas fa-search"></i></span>
+				<input id="header__input-check" type="text" placeholder="Search for anything" class="header__input--control">
+				<div class="header__input-menu menu">
+					<ul class="header__input-list"></ul>
+				</div>
+			</div>
+		</div>
+		<div class="header__right">
+			<!-- button * 3  -->
+			<div class="header__right-popper">		
+				<a href="#" class="header__link">Udemy Business</a>
+				<div class="popper__content menu">
+					<h3>Get your team access to over 6,000 top Udemy courses, anytime,anywhere.</h3>
+					<button class="btn">Try Udemy Business</button>
+				</div>
+			</div>
+			<div class="header__right-popper">		
+				<a href="#" class="header__link">Teach on Udemy</a>
+				<div class="popper__content menu">
+					<h3>Turn what you know into an opportunity and reach millions around the world.</h3>
+					<button class="btn">Learn more</button>
+				</div>
+			</div>
+			<div class="header__cart">
+				<span class="header__cart--icon"><i class="fas fa-shopping-cart"></i></span>
+				<div class="cart__empty menu">
+					<span>Your cart is empty.</span>
+					<a href="#" class="link">keep shopping</a>
+				</div>
+			</div>		
+			<button id="btn-id2" class="header__btn btn" onclick="displayBox('#id02','#form-2')">Log in</button>
+			<button id="btn-id1" class="header__btn btn active" onclick="displayBox('#id01','#form-1')" >Sign up</button>
+			<button class="header__btn btn" onclick="displayBox('.language','.language__box')" ><a class="header__language"><i class="fas fa-globe"></i></a></button>
+			<div class="language"></div>
+			<div class="language__box" >
+				<h2 class="language__heading">Choose a language 
+					<span class="language-icon" onclick="closedBox('.language','.language__box')">
+					<i class=" fas fa-times"></i>
+					</span>
+				</h2>
+				<div class="language__list">
+					<span class="language__text active"><a href="#" onclick="selectLanguage()" class="language__link">English</a></span>
+					<span class="language__text"><a href="#" onclick="selectLanguage()" class="language__link">Vietnamese</a></span>
+				</div>
+			</div>
+			<!-- log in -->
+			<div id="id02" class="modal"></div>
+			<form action="" class="animate" id="form-2">
+				<h4 class="form-heading">Log In to Your Udemy Account!</h4>
+				<span class="form-close" title="close" onclick="closedBox('#id02','#form-2')"><i class="fas fa-times"></i></span>
+				<button class="form-social active"><i class="fab fa-facebook-f"></i>Continue with Facebook</button>
+				<button class="form-social"><i class="fab fa-google"></i>Continue with Google</button>
+				<div class="form-group">
+					<label for="id" class="form-label"><i class="fas fa-envelope form-label__icon"></i></label>
+					<input type="text" id="email" name="id" placeholder="Email" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="password" class="form-label"><i class="fas fa-lock form-label__icon"></i></label>
+					<input type="password" name="Password" placeholder="Password" class="form-control">
+				</div>
+				<button class="form-submit">Log In</button>
+				<span class="form-forgot">or <a href="#" class="from-link">Forgot Password</a></span>
+			</form>
+			<!-- sign up  -->
+			<div id="id01" class="modal"></div>
+			<form action=""  id="form-1" class="animate" >
+				<h4 class="form-heading">Sign Up and Start Learning!</h4>
+				<span class="form-close" title="close" onclick="closedBox('#id01','#form-1')"><i class="fas fa-times"></i></span>
+				<div class="form-group">
+					<label for="fullname" class="form-label"><i class="fas fa-user-alt form-label__icon"></i></label>
+					<input type="text" id="fullname" name="fullname" placeholder="Full Name" class="form-control">
+					<div id="form-message"></div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="form-label"><i class="fas fa-envelope form-label__icon"></i></label>
+					<input type="text" id="email" name="email" placeholder="Email" class="form-control">
+					<div id="form-message"></div>
+				</div>
+				<div class="form-group">
+					<label for="password" class="form-label"><i class="fas fa-lock form-label__icon"></i></label>
+					<input type="password" id="password" name="password" placeholder="Password" class="form-control">
+					<div id="form-message"></div>
+				</div>
+				<div class="form-group">
+					<label for="password" class="form-label"><i class="fas fa-lock form-label__icon"></i></label>
+					<input type="password" id="confirm-password" name="password" placeholder="Confirm Password" class="form-control">
+					<div id="form-message"></div>
+				</div>
+				<div class="form-checkbox">
+					<input type="checkbox" class="checkbox-control" name="done"><span>Yes! I want to get the most out of Udemy by receiving emails with exclusive deals, personal recommendations and learning tips!</span>
+				</div>
+				<button class="form-submit">Sign Up</button>
+			</form>
+		</div>
+	</header>
+	<!-- slider -->
+	<div id="slider">
+		<img src="./assets/image/slider/slide1.jpg" alt="slider" class="slider__img">
+		<div class="slider__box">
+			<h2 class="sli-box__heading">Learn on your schedule</h2>
+			<span class="sli-box__descr">Anywhere, anytime. Start learning today !</span>
+			<input type="text" name="" placeholder="What do you want to learn?" class="sli-box__control">
+		</div>
+	</div>
+	<!-- content -->
+	<div class="content">
+		<div class="tab">
+			<div class="tab-link">
+				<button class="tab-btn python active">Python</button>
+				<button class="tab-btn excel">Excel</button>
+				<button class="tab-btn webDevelopment">Web Development</button>
+				<button class="tab-btn javascript">Javascript</button>
+			</div>
+			<div class="tab-content">
+				<div class="tab-info"></div>
+				<div class="tab-courses"></div>
+			</div>		
+		</div>
+	</div>
+	<!-- demo -->
+	<div class="content__demo">
+		<div class="content__item"><i class="fas fa-play content__item--icon"></i><h2 class="content__item--text">Over 155,000 video courses on career and personal skills</h2></div>
+		<div class="content__item"><i class="fas fa-star content__item--icon"></i><h2 class="content__item--text">Choose from top industry instructors across the world</h2></div>
+		<div class="content__item"><i class="fas fa-infinity content__item--icon"></i><h2 class="content__item--text">Learn at your own pace, with lifetime access on mobile and desktop</h2></div>
+	</div>
+	<!-- student are viewing -->
+	<div class="tab">
+		<h2 class="tab-heading2">Students are viewing</h2>
+		<div class="tab-courses1"></div>
+		<!-- category -->
+		<div class="content__categories">
+			<h2 class="categories__heading">Top categories</h2>
+			<div class="topics1"></div>
+			<div class="topics2"></div>
+		</div>
+	</div>
+	<!-- featured -->
+	<div class="featured">
+		<h2 class="featured-heading">Featured topics by category</h2>
+		<div class="featured-content" >
+		</div>
+		<button class="featured__btn btn">Explore more topics</button>
+	</div>
+	<!-- intructor -->
+	<div id="intructor-id1" class="content__instructor">
+	</div>
+	<!-- companies -->
+	<div class="content__companies">
+		<h2 class="companies__heading">Trusted by companies of all sizes</h2>
+		<ul class="companies__list">
+			<li class="companies__list-item"><i class="fas fa-apple-alt"></i></li>
+			<li class="companies__list-item"><i class="fab fa-youtube"></i></li>
+			<li class="companies__list-item"><i class="fab fa-cc-paypal"></i></li>
+			<li class="companies__list-item"><i class="fab fa-google"></i></li>
+			<li class="companies__list-item"><i class="fab fa-instagram"></i></li>
+		</ul>
+	</div>
+	<!-- opportunity -->
+	<div id="intructor-id2" class="content__instructor order">
+	</div>
+	<div id="intructor-id3" class="content__instructor">
+	</div>
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer__network">
+			<ul class="network__list column-5">
+				<li class="network__list--item"><a href="#" class="item__link">Udemy Business</a></li>
+				<li class="network__list--item"><a href="#" class="item__link">Teach on Udemy</a></li>
+				<li class="network__list--item"><a href="#" class="item__link">Get the app</a></li>
+				<li class="network__list--item"><a href="#" class="item__link">About us</a></li>
+				<li class="network__list--item"><a href="#" class="item__link">Contact us</a></li>
+			</ul>
+			<ul class="network__list column-5">
+				<li class="network__list--item"><a href="#" class="item__link">Careers</a></li>
+				<li class="network__list--item"><a href="#" class="item__link">Blog</a></li>
+				<li class="network__list--item"><a href="#" class="item__link">Help and Support</a></li>
+				<li class="network__list--item"><a href="#" class="item__link">Affiliate</a></li>
+			</ul>
+			<ul class="network__list column-5">
+				<li class="network__list--item"><a href="#" class="item__link">Terms</a></li>
+				<li class="network__list--item"><a href="#" class="item__link">Privacy policy</a></li>
+				<li class="network__list--item"><a href="#" class="item__link">Sitemap</a></li>
+			</ul>
+			<div class="footer__language">
+				<button class="footer__language--btn"><i class="fas fa-globe footer__language--icon"></i> English</button>
+			</div>
+		</div>
+		<div class="footer-logo-copyright">
+			<div class="footer__logo">
+				<svg viewBox="0 0 213 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.059 19.088L16.528 9.544 0 19.088V9.544L16.53 0l16.531 9.544v9.544h-.002z" fill="#A435F0"/><path d="M0 27.101h8.659V48.14c0 5.437 4.058 8.085 7.872 8.085 3.842 0 7.872-2.72 7.872-8.157V27.1h8.658V48.64c0 5.008-1.573 8.872-4.722 11.52-3.15 2.648-7.086 3.936-11.88 3.936-4.795 0-8.731-1.288-11.808-3.936C1.573 57.512 0 53.792 0 48.853V27.101zM107.92 53.248c-2.621 2.333-5.608 3.477-9.013 3.477-6.208 0-10.376-3.538-10.846-9.018h27.979s.184-1.771.184-3.432c0-5.152-1.645-9.446-5.008-12.952-3.291-3.507-7.584-5.224-12.808-5.224-5.51 0-10.019 1.717-13.597 5.224-3.507 3.506-5.296 8.085-5.296 13.81v.286c0 5.653 1.789 10.16 5.296 13.525 3.506 3.363 8.157 5.08 13.81 5.08 6.574 0 11.806-2.592 15.731-7.064l-6.432-3.712zm-16.456-17.56c1.93-1.504 4.293-2.29 6.941-2.29 2.504 0 4.579.786 6.368 2.362 1.71 1.435 2.632 3.197 2.712 5.224H88.28c.277-2.093 1.336-3.859 3.184-5.296zM195.085 68.885C191.568 77.18 187.893 80 182.259 80h-3.904v-7.675h3.157c1.939 0 3.741-.728 5.459-4.693l1.717-3.965L173.875 27.1h8.802l10.52 26.334L204.003 27.1h8.802c-.002 0-14.101 33.248-17.72 41.784zM66.77 13.29v17.078c-2.837-2.544-7.25-4.056-11.52-4.056-5.08 0-9.373 1.79-12.88 5.437-3.434 3.579-5.151 8.014-5.151 13.382s1.717 9.802 5.152 13.453c3.506 3.579 7.8 5.368 12.88 5.368 5.861 0 9.562-2.301 11.52-4.107v3.32h8.586V13.291h-8.586zm-2.575 39.715c-2.075 2.075-4.723 3.15-7.8 3.15-3.078 0-5.582-1.075-7.656-3.15-2.003-2.074-3.006-4.722-3.006-7.872 0-3.149 1.003-5.797 3.006-7.872 2.074-2.074 4.578-3.149 7.656-3.149 3.077 0 5.725 1.075 7.8 3.15 2.146 2.074 3.221 4.722 3.221 7.871 0 3.15-1.075 5.798-3.221 7.872zM160.525 26.387c-6.522 0-9.914 2.706-12.237 5.312-.928-1.771-3.544-5.312-9.659-5.312-5.165 0-8.213 2.61-9.73 4.472v-3.755h-8.515v36.064h8.515V42.416c0-4.867 3.005-8.373 7.013-8.373 4.08 0 6.44 3.077 6.44 8.013v21.11h8.515V42.412c0-4.938 2.933-8.373 7.154-8.373 4.08 0 6.44 3.077 6.44 8.013v21.11h8.587V40.837c0-9.402-5.053-14.45-12.523-14.45z" fill="#fff"/></svg>
+			</div>
+			<p class="footer__copyright"><i class="far fa-copyright"></i>2021 Udemy, Inc.</p>
+		</div>
+	</footer>
+
+	<script src="./assets/js/app.js"></script>
+	<script src="./assets/js/validation.js"></script>
+	<script>
+		validator({
+			form : "#form-1" , 
+			formGroup : ".form-group" , 
+			formMessage : "#form-message" , 
+			rules :[
+				validator.isRequired("#fullname","vui lòng nhập trường này!") ,
+				validator.isEmail("#email","Có lỗi Email không hợp lệ !"),
+				validator.minLength("#password",6,"vui lòng điền trên 6 kí tự!"),
+				validator.isConfirmedPassword("#confirm-password",function(value){
+					return value === document.querySelector('#form-1 #password').value 
+				},"Mật khẩu không trùng khớp!")
+			]
+		})
+	</script>
+</body>
+</html>
